@@ -137,11 +137,14 @@
             </div>
             <div class="paper-abstract">
                 We construct a symmetry defect matrix from divisor lattices and prove
-                that its trace equals &zeta;(2s)/&zeta;(&minus;s). We establish a new
-                equivalence: the Riemann Hypothesis holds if and only if this trace
-                is O(N<sup>1/2+&epsilon;</sup>). For Re(s) &gt; 1/2, the bound is
-                proven unconditionally. Numerical experiments confirm that the matrix
-                detects nontrivial zeros of &zeta; through singular value collapses.
+                that its trace equals &zeta;(2s)/&zeta;(&minus;s), with an unconditional
+                decomposition into a pole term N<sup>1&minus;2&sigma;</sup> and oscillatory
+                terms controlled by the nontrivial zeros. We show that a zero off the
+                critical line produces anomalously large trace growth, and prove
+                ||S<sub>N</sub>||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>)
+                unconditionally. For Re(s) &gt; 1/2, |trace| = O(&radic;N) is proven.
+                Numerical experiments confirm that the matrix detects zeros of &zeta;
+                through singular value collapses (correlation 0.95 with HR predictions).
             </div>
             <div class="links">
                 <a class="gh" href="https://github.com/STEPHDEV13/Riemann">GitHub Repository</a>
@@ -153,7 +156,7 @@
             <li><strong>Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
             <li><strong>Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s</li>
             <li><strong>Zero detection:</strong> &sigma;<sub>min</sub>(S<sub>N</sub>(1/4+it)) collapses at t &approx; &gamma;<sub>k</sub>/2</li>
-            <li><strong>New equivalence:</strong> RH &hArr; |trace(S<sub>N</sub>)| = O(N<sup>1/2+&epsilon;</sup>) for Re(s) &gt; 0</li>
+            <li><strong>Zero detection:</strong> A zero off the critical line produces anomalously large trace growth &Theta;(N<sup>1&minus;Re(&rho;)</sup>)</li>
             <li><strong>Nyman&ndash;Beurling:</strong> primes alone are insufficient (d stagnates at 0.228)</li>
         </ul>
 
