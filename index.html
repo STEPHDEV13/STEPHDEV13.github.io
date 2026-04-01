@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rabarison Mimi Stéphane Thannio — Researcher</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', 'Times New Roman', serif;
+            color: #2c3e50;
+            background: #fafafa;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px 24px;
+        }
+        header {
+            border-bottom: 3px solid #2c3e50;
+            padding-bottom: 24px;
+            margin-bottom: 36px;
+        }
+        h1 {
+            font-size: 2em;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+        .affiliation {
+            font-size: 1.1em;
+            color: #555;
+            font-style: italic;
+        }
+        .email {
+            margin-top: 8px;
+            font-family: monospace;
+            font-size: 0.95em;
+        }
+        .email a { color: #2980b9; text-decoration: none; }
+        .email a:hover { text-decoration: underline; }
+        h2 {
+            font-size: 1.4em;
+            margin-top: 32px;
+            margin-bottom: 12px;
+            color: #2c3e50;
+            border-left: 4px solid #2980b9;
+            padding-left: 12px;
+        }
+        p { margin-bottom: 14px; text-align: justify; }
+        .paper {
+            background: #fff;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 16px;
+        }
+        .paper-title {
+            font-weight: 700;
+            font-size: 1.05em;
+            margin-bottom: 6px;
+        }
+        .paper-meta {
+            color: #777;
+            font-size: 0.9em;
+            margin-bottom: 8px;
+        }
+        .paper-abstract {
+            font-size: 0.92em;
+            color: #444;
+        }
+        .links { margin-top: 10px; }
+        .links a {
+            display: inline-block;
+            background: #2980b9;
+            color: white;
+            padding: 5px 14px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.85em;
+            margin-right: 8px;
+        }
+        .links a:hover { background: #1a5f8a; }
+        .links a.gh { background: #333; }
+        .links a.gh:hover { background: #555; }
+        ul { padding-left: 24px; margin-bottom: 14px; }
+        li { margin-bottom: 6px; }
+        footer {
+            margin-top: 48px;
+            padding-top: 16px;
+            border-top: 1px solid #ddd;
+            font-size: 0.85em;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rabarison Mimi St&eacute;phane Thannio</h1>
+            <div class="affiliation">
+                Doctorant en Informatique<br>
+                &Eacute;cole Nationale d'Informatique (ENI)<br>
+                Fianarantsoa, Madagascar
+            </div>
+            <div class="email">
+                <a href="mailto:stephanethannio@gmail.com">stephanethannio@gmail.com</a>
+            </div>
+        </header>
+
+        <h2>Research Interests</h2>
+        <p>
+            My research lies at the intersection of <strong>set theory</strong>,
+            <strong>analytic number theory</strong>, and <strong>computational mathematics</strong>.
+            I am particularly interested in structural approaches to the
+            Riemann Hypothesis, using the foundational principle that
+            <em>"the set of sets is not the same"</em> &mdash; the observation that
+            a collection of individually symmetric objects does not inherit
+            their symmetry, and that this failure carries deep arithmetic information.
+        </p>
+
+        <h2>Publications &amp; Preprints</h2>
+
+        <div class="paper">
+            <div class="paper-title">
+                The Set of Sets Is Not the Same: Divisor Lattice Coherence,
+                Spectral Detection of Zeros, and a New Equivalence of the Riemann Hypothesis
+            </div>
+            <div class="paper-meta">
+                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026
+            </div>
+            <div class="paper-abstract">
+                We construct a symmetry defect matrix from divisor lattices and prove
+                that its trace equals &zeta;(2s)/&zeta;(&minus;s). We establish a new
+                equivalence: the Riemann Hypothesis holds if and only if this trace
+                is O(N<sup>1/2+&epsilon;</sup>). For Re(s) &gt; 1/2, the bound is
+                proven unconditionally. Numerical experiments confirm that the matrix
+                detects nontrivial zeros of &zeta; through singular value collapses.
+            </div>
+            <div class="links">
+                <a class="gh" href="https://github.com/STEPHDEV13/Riemann">GitHub Repository</a>
+            </div>
+        </div>
+
+        <h2>Key Results</h2>
+        <ul>
+            <li><strong>Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
+            <li><strong>Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s</li>
+            <li><strong>Zero detection:</strong> &sigma;<sub>min</sub>(S<sub>N</sub>(1/4+it)) collapses at t &approx; &gamma;<sub>k</sub>/2</li>
+            <li><strong>New equivalence:</strong> RH &hArr; |trace(S<sub>N</sub>)| = O(N<sup>1/2+&epsilon;</sup>) for Re(s) &gt; 0</li>
+            <li><strong>Nyman&ndash;Beurling:</strong> primes alone are insufficient (d stagnates at 0.228)</li>
+        </ul>
+
+        <h2>Background</h2>
+        <p>
+            I hold a background in mathematics and computer science with over 10 years
+            of experience. I am currently pursuing doctoral research at the
+            &Eacute;cole Nationale d'Informatique (ENI) in Fianarantsoa, Madagascar,
+            focusing on computational and set-theoretic approaches to problems in
+            analytic number theory.
+        </p>
+
+        <footer>
+            &copy; 2026 Rabarison Mimi St&eacute;phane Thannio
+        </footer>
+    </div>
+</body>
+</html>
