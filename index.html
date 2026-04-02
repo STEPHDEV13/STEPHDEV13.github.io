@@ -133,40 +133,54 @@
                 and Spectral Detection of Riemann Zeta Zeros
             </div>
             <div class="paper-meta">
-                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026
+                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash; Version 7
             </div>
             <div class="paper-abstract">
-                We construct a symmetry defect matrix from divisor lattices and prove
-                that its trace equals &zeta;(2s)/&zeta;(&minus;s), with an unconditional
-                decomposition into a pole term N<sup>1&minus;2&sigma;</sup> and oscillatory
-                terms controlled by the nontrivial zeros. We show that a zero off the
-                critical line produces anomalously large trace growth, and prove
-                ||S<sub>N</sub>||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>)
-                unconditionally. For Re(s) &gt; 1/2, |trace| = O(&radic;N) is proven.
-                Numerical experiments confirm that the matrix detects zeros of &zeta;
-                through singular value collapses (correlation 0.95 with HR predictions).
+                We construct a symmetry defect matrix S<sub>N</sub>(s) from divisor lattices
+                and prove 10 unconditional theorems (A&ndash;J): the trace converges to
+                &zeta;(2s)/&zeta;(&minus;s) with an explicit pole + oscillatory decomposition;
+                the Frobenius norm satisfies
+                ||S<sub>N</sub>||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>);
+                an exact Hadamard identity links S<sub>N</sub>(&sigma;) to S<sub>N</sub>(1&minus;&sigma;)
+                across the critical strip; T<sub>N</sub> factors as a Hadamard product of
+                rank-2 local matrices T<sup>(p)</sup><sub>N</sub> (matrix Euler product);
+                the rank Q(N) is a topological invariant across all dimensions d &ge; 2;
+                and the Euler product cancellation ratio R<sub>&infin;</sub>(&alpha;) is strictly
+                decreasing &mdash; the zeros of &zeta; and M&ouml;bius cancellation are two
+                faces of the same phenomenon. A zero off the critical line produces
+                anomalous trace growth, detectable through the matrix.
+                Supported by 121 numerical verification scripts.
             </div>
             <div class="links">
                 <a class="gh" href="https://github.com/STEPHDEV13/Riemann">GitHub Repository</a>
             </div>
         </div>
 
-        <h2>Proven Results</h2>
+        <h2>Proven Results (Version 7)</h2>
         <ul>
-            <li><strong>Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
-            <li><strong>Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s (via Smith&ndash;Apostol&ndash;Bourque&ndash;Ligh decomposition)</li>
-            <li><strong>Frobenius norm:</strong> ||S<sub>N</sub>(&sigma;)||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>) unconditionally</li>
-            <li><strong>Rank&ndash;Frobenius bound:</strong> |trace| = O(&radic;N) for Re(s) &gt; 1/2</li>
-            <li><strong>Trace decomposition:</strong> pole term N<sup>1&minus;2&sigma;</sup> (unconditional) + oscillatory terms (zero-dependent)</li>
+            <li><strong>(A) Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
+            <li><strong>(B) Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s</li>
+            <li><strong>(C) Zero detection:</strong> S<sub>N</sub>(&rho;/2) becomes asymptotically singular at each nontrivial zero &rho;</li>
+            <li><strong>(D) Frobenius norm:</strong> ||S<sub>N</sub>(&sigma;)||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>) unconditionally</li>
+            <li><strong>(E) Rank&ndash;Frobenius bound:</strong> |trace| = O(&radic;N) for Re(s) &gt; 1/2</li>
+            <li><strong>(F) Ramanujan decomposition:</strong> (f<sub>s</sub> * &mu;)(d) = &mu;(d) d<sup>3s</sup> via Dirichlet convolution</li>
+            <li><strong>(G) Hadamard identity:</strong> S<sub>N</sub>(1&minus;&sigma;) = D<sup>&minus;1</sup>(S<sub>N</sub>(&sigma;) &compfn; R<sub>N</sub>)D<sup>&minus;1</sup> &mdash; exact link across the critical strip</li>
+            <li><strong>(H) Operator norm transfer:</strong> ||S<sub>N</sub>(&sigma;)||<sub>op</sub> &le; ||S<sub>N</sub>(1&minus;&sigma;)||<sub>op</sub> for &sigma; &lt; 1/2 (R<sub>N</sub> positive semi-definite)</li>
+            <li><strong>(I) Matrix Euler product:</strong> T<sub>N</sub> = &bigodot;<sub>p</sub> T<sup>(p)</sup><sub>N</sub>, rank-2 local factors</li>
+            <li><strong>(J) Dimensional invariance:</strong> rank(T<sup>(d)</sup><sub>N</sub>) = Q(N) for all d &ge; 2 &mdash; topological invariant</li>
+            <li><strong>NEW &mdash; Euler product monotonicity:</strong> R<sub>&infin;</sub>(&alpha;) strictly decreasing &mdash; full multiplicativity (&alpha;=1) yields maximal cancellation</li>
         </ul>
 
-        <h2>Numerical Discoveries</h2>
+        <h2>Numerical Discoveries (121 scripts)</h2>
         <ul>
             <li><strong>Zero detection:</strong> &sigma;<sub>min</sub>(S<sub>N</sub>(1/4+it)) collapses at t &approx; &gamma;<sub>k</sub>/2</li>
             <li><strong>Growth detection:</strong> a zero off the critical line produces anomalous trace growth &Theta;(N<sup>1&minus;Re(&rho;)</sup>)</li>
             <li><strong>Nyman&ndash;Beurling:</strong> primes alone are insufficient (d stagnates at 0.228); composites carry irreducible information</li>
-            <li><strong>M&ouml;bius cancellation:</strong> the breaking of &mu;*1=&delta; occurs only at primes (f'<sub>0</sub>(m) = &minus;3&Lambda;(m))</li>
-            <li><strong>GUE-like behavior:</strong> eigenvalue participation ratio R<sub>4</sub> &isin; [0.5, 0.8], consistent with random matrix statistics</li>
+            <li><strong>Eigenvalue cancellation:</strong> 99.7% of eigenvalues cancel at &sigma; = 1/4 &mdash; consistent with RH</li>
+            <li><strong>GUE universality:</strong> eigenvalue spacing statistics match random matrix theory predictions</li>
+            <li><strong>&alpha;-deformation:</strong> F<sub>&alpha;</sub>(s) has no zeros for &alpha; &lt; 1; zeros emerge at &alpha; = 1 (phase transition)</li>
+            <li><strong>Dimensional extension:</strong> rank invariance verified for dimensions d = 2 to 10</li>
+            <li><strong>Farey deviation:</strong> &delta;<sub>N</sub> &sim; N<sup>0.477</sup>, consistent with RH</li>
         </ul>
 
         <h2>Background</h2>
