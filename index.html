@@ -128,13 +128,24 @@
 
         <h2>Research Interests</h2>
         <p>
-            My research lies at the intersection of <strong>set theory</strong>,
-            <strong>analytic number theory</strong>, and <strong>computational mathematics</strong>.
-            I am particularly interested in structural approaches to the
-            Riemann Hypothesis, using the foundational principle that
-            <em>"the set of sets is not the same"</em> &mdash; the observation that
-            a collection of individually symmetric objects does not inherit
-            their symmetry, and that this failure carries deep arithmetic information.
+            My research lies at the intersection of <strong>algebra</strong>,
+            <strong>analytic number theory</strong>, <strong>combinatorics</strong>,
+            and <strong>ethnomathematics</strong>.
+            I pursue two main lines of inquiry:
+        </p>
+        <p>
+            <strong>(1) Riemann Hypothesis.</strong> Structural approaches using
+            divisor lattice matrices over GF(2), founded on the principle that
+            <em>&ldquo;the set of sets is not the same&rdquo;</em> &mdash; a collection
+            of individually symmetric objects does not inherit their symmetry,
+            and this failure carries deep arithmetic information.
+        </p>
+        <p>
+            <strong>(2) Sikidy &amp; Ethnomathematics.</strong> Algebraic and
+            combinatorial study of the Malagasy Sikidy divination system. The
+            16 Sikidy figures naturally form the group GF(2)<sup>4</sup>, and I
+            investigate the magic squares, error-detecting properties, and
+            finite field structures embedded in this ancestral system.
         </p>
 
         <h2>Publications &amp; Preprints</h2>
@@ -168,7 +179,50 @@
             </div>
         </div>
 
-        <h2>Proven Results (Version 7)</h2>
+        <div class="paper">
+            <div class="paper-title">
+                Magic Squares on the Sorasikidy 16: An Algebraic and Combinatorial Study
+            </div>
+            <div class="paper-meta">
+                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash;
+                arXiv: math.CO | MSC 2020: 05B15, 05B20, 11T06, 01A13
+            </div>
+            <div class="paper-abstract">
+                We study 4&times;4 magic squares built from the 16 figures of the
+                Malagasy Sikidy divination system. Our central result is the
+                <strong>Bit-Balance Theorem</strong>: a set of four figures is doubly
+                magic (sum&nbsp;=&nbsp;30, XOR&nbsp;=&nbsp;0) if and only if each bit
+                position contains exactly two ones &mdash; a <em>binary equilibrium</em>.
+                This yields a canonical decomposition into <strong>Balanced Binary
+                Squares</strong> (BBS), of which exactly <strong>16</strong> exist. All
+                <strong>2,112</strong> doubly magic squares (528 equivalence classes) are
+                classified as 4-tuples of BBS. Only 144 squares (6.8%) arise from the
+                GF(4) MOLS construction; the remaining 93.2% are <em>sporadic</em>.
+                We further prove that the 192 pandiagonal squares satisfy a half-period
+                complementarity, that the X-magic vector space has dimension 32 over
+                GF(2), and that the traditional Sikidy Judge is restricted to 8 figures
+                (even Hamming weight), revealing an intrinsic error-detection mechanism
+                embedded in the ancestral system.
+            </div>
+            <div class="links">
+                <a href="sikidy_magic_squares_2026.pdf">PDF</a>
+                <a class="gh" href="https://github.com/STEPHDEV13/Sikidy">GitHub Repository</a>
+            </div>
+        </div>
+
+        <h2>Sikidy: Key Results</h2>
+        <ul>
+            <li><strong>Bit-Balance Theorem:</strong> doubly magic &hArr; exactly 2 ones per bit position. The magic constant 30 = 2(2<sup>4</sup>&minus;1) is forced by binary equilibrium</li>
+            <li><strong>16 BBS:</strong> exactly 16 Balanced Binary Squares of order 4 exist (8 complementary pairs, 4 symmetric)</li>
+            <li><strong>Decomposition:</strong> every doubly magic square = ordered 4-tuple of BBS. Problem reduced from two arithmetics to one combinatorial structure</li>
+            <li><strong>2,112 doubly magic squares</strong> (528 classes mod D<sub>4</sub>), of which 192 are pandiagonal (48 classes)</li>
+            <li><strong>GF(4) characterization:</strong> only 144/2,112 = 6.8% arise from MOLS over GF(4); the other 93.2% are sporadic</li>
+            <li><strong>140 = 16&times;35/4:</strong> structural proof that XOR-zero quadruples are affine 2-flats of GF(2)<sup>4</sup></li>
+            <li><strong>Dimension 32:</strong> the X-magic vector space over GF(2) has dimension 32 (2<sup>32</sup> X-magic matrices)</li>
+            <li><strong>Judge distribution:</strong> only 8 of the 16 figures can appear as Judge (even Hamming weight) &mdash; intrinsic error detection</li>
+        </ul>
+
+        <h2>Riemann: Proven Results (Version 7)</h2>
         <ul>
             <li><strong>(A) Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
             <li><strong>(B) Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s</li>
@@ -197,13 +251,16 @@
 
         <h2>Background</h2>
         <p>
-            With 10 years of study of the Riemann Hypothesis combining mathematics
-            and computer science, I am currently pursuing doctoral research at the
+            With 10 years of study combining mathematics and computer science,
+            I am currently pursuing doctoral research at the
             &Eacute;cole Nationale d'Informatique (ENI) in Fianarantsoa, Madagascar.
-            My approach starts from the set-theoretic principle
-            <em>&ldquo;the set of sets is not the same&rdquo;</em> and builds
-            a matrix framework connecting divisor lattices, the M&ouml;bius function,
-            and the spectral detection of zeta zeros.
+            My work spans two complementary directions:
+            a matrix framework for the Riemann Hypothesis based on divisor lattices
+            and the M&ouml;bius function, and an algebraic study of the Malagasy
+            Sikidy system that reveals deep connections between traditional knowledge
+            and modern mathematics (finite fields, combinatorial designs, coding theory).
+            Both lines of research share a common thread: the interplay between
+            <strong>binary arithmetic</strong> (GF(2)) and classical number theory.
         </p>
 
         <footer>
@@ -218,7 +275,9 @@
         var W, H, particles, mouse;
         var symbols = ['\u03B6','\u03C0','\u03BC','\u03C3','\u2211','\u222B','\u221E',
                        '\u2202','\u0393','\u039B','\u03B1','\u03C1','\u2124','\u2102',
-                       '\u2208','\u2200','\u2203','\u2260','\u2248','\u221A'];
+                       '\u2208','\u2200','\u2203','\u2260','\u2248','\u221A',
+                       '\u2295','\u2297','\u25CF','\u25CB','\u25CF\u25CF','\u25CB\u25CB',
+                       'GF','XOR','\u2296','\u22BB'];
 
         mouse = { x: -500, y: -500 };
 
