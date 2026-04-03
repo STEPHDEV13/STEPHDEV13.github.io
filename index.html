@@ -162,26 +162,26 @@
                 and Spectral Detection of Riemann Zeta Zeros
             </div>
             <div class="paper-meta">
-                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash; Version 7
+                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash; Version 10 (21 pages, 12 proven theorems)
             </div>
             <div class="paper-abstract">
                 We construct a symmetry defect matrix S<sub>N</sub>(s) from divisor lattices
-                and prove 10 unconditional theorems (A&ndash;J): the trace converges to
-                &zeta;(2s)/&zeta;(&minus;s) with an explicit pole + oscillatory decomposition;
-                the Frobenius norm satisfies
-                ||S<sub>N</sub>||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>);
-                an exact Hadamard identity links S<sub>N</sub>(&sigma;) to S<sub>N</sub>(1&minus;&sigma;)
-                across the critical strip; T<sub>N</sub> factors as a Hadamard product of
-                rank-2 local matrices T<sup>(p)</sup><sub>N</sub> (matrix Euler product);
-                the rank Q(N) is a topological invariant across all dimensions d &ge; 2;
-                and the Euler product cancellation ratio R<sub>&infin;</sub>(&alpha;) is strictly
-                decreasing &mdash; the zeros of &zeta; and M&ouml;bius cancellation are two
-                faces of the same phenomenon. A zero off the critical line produces
-                anomalous trace growth, detectable through the matrix.
-                Supported by 121 numerical verification scripts.
+                and prove 12 unconditional theorems: the trace converges to
+                &zeta;(2s)/&zeta;(&minus;s); an exact Hadamard identity links S<sub>N</sub>(&sigma;)
+                to S<sub>N</sub>(1&minus;&sigma;) across the critical strip;
+                T<sub>N</sub> factors as a Hadamard product of rank-2 local matrices
+                (matrix Euler product); the rank Q(N) is a topological invariant across
+                all dimensions d &ge; 2; the Euler product cancellation ratio is strictly
+                decreasing in the deformation parameter &alpha;; the finite cancellation
+                derivative d&rho;/d&alpha; = &minus;(2/&alpha;)P<sub>E</sub>P<sub>O</sub>(&mu;<sub>E</sub>&minus;&mu;<sub>O</sub>)
+                reduces monotonicity to a parity condition; and &mu; reduces the variance
+                of the eigenvalue sum by 70&ndash;97% compared to random signs via the
+                GF(2) morphism structure &mdash; connecting to Malagasy Sikidy.
+                Supported by 136 numerical scripts.
             </div>
             <div class="links">
-                <a class="soon">GitHub &mdash; coming soon</a>
+                <a href="divisor_lattice_coherence_riemann_2026_v10.pdf">PDF (v10)</a>
+                <a class="gh" href="https://github.com/STEPHDEV13/Riemann">GitHub</a>
             </div>
         </div>
 
@@ -228,31 +228,32 @@
             <li><strong>Judge distribution:</strong> only 8 of the 16 figures can appear as Judge (even Hamming weight) &mdash; intrinsic error detection</li>
         </ul>
 
-        <h2>Riemann: Proven Results (Version 7)</h2>
+        <h2>Riemann: Proven Results (Version 10 &mdash; 12 Theorems)</h2>
         <ul>
             <li><strong>(A) Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
             <li><strong>(B) Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s</li>
-            <li><strong>(C) Zero detection:</strong> S<sub>N</sub>(&rho;/2) becomes asymptotically singular at each nontrivial zero &rho;</li>
-            <li><strong>(D) Frobenius norm:</strong> ||S<sub>N</sub>(&sigma;)||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>) unconditionally</li>
-            <li><strong>(E) Rank&ndash;Frobenius bound:</strong> |trace| = O(&radic;N) for Re(s) &gt; 1/2</li>
-            <li><strong>(F) Ramanujan decomposition:</strong> (f<sub>s</sub> * &mu;)(d) = &mu;(d) d<sup>3s</sup> via Dirichlet convolution</li>
-            <li><strong>(G) Hadamard identity:</strong> S<sub>N</sub>(1&minus;&sigma;) = D<sup>&minus;1</sup>(S<sub>N</sub>(&sigma;) &compfn; R<sub>N</sub>)D<sup>&minus;1</sup> &mdash; exact link across the critical strip</li>
-            <li><strong>(H) Operator norm transfer:</strong> ||S<sub>N</sub>(&sigma;)||<sub>op</sub> &le; ||S<sub>N</sub>(1&minus;&sigma;)||<sub>op</sub> for &sigma; &lt; 1/2 (R<sub>N</sub> positive semi-definite)</li>
-            <li><strong>(I) Matrix Euler product:</strong> T<sub>N</sub> = &bigodot;<sub>p</sub> T<sup>(p)</sup><sub>N</sub>, rank-2 local factors</li>
-            <li><strong>(J) Dimensional invariance:</strong> rank(T<sup>(d)</sup><sub>N</sub>) = Q(N) for all d &ge; 2 &mdash; topological invariant</li>
-            <li><strong>NEW &mdash; Euler product monotonicity:</strong> R<sub>&infin;</sub>(&alpha;) strictly decreasing &mdash; full multiplicativity (&alpha;=1) yields maximal cancellation</li>
+            <li><strong>(C) Frobenius norm:</strong> ||S<sub>N</sub>(&sigma;)||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>) unconditionally</li>
+            <li><strong>(D) Rank&ndash;Frobenius bound:</strong> |trace| = O(&radic;N) for real &sigma; &gt; 1/2</li>
+            <li><strong>(E) Ramanujan decomposition:</strong> (f<sub>s</sub> * &mu;)(d) = &mu;(d) d<sup>3s</sup></li>
+            <li><strong>(F) Hadamard identity:</strong> S<sub>N</sub>(1&minus;&sigma;) = D<sup>&minus;1</sup>(S<sub>N</sub>(&sigma;) &compfn; R<sub>N</sub>)D<sup>&minus;1</sup> exact, R<sub>N</sub> PSD</li>
+            <li><strong>(G) Matrix Euler product:</strong> T<sub>N</sub> = &bigodot;<sub>p</sub> T<sup>(p)</sup><sub>N</sub>, rank-2 local factors with opposite signs</li>
+            <li><strong>(H) Dimensional invariance:</strong> rank(T<sup>(d)</sup><sub>N</sub>) = Q(N) for all d &ge; 2</li>
+            <li><strong>(I) Euler product monotonicity:</strong> R<sub>P</sub>(&alpha;) strictly decreasing</li>
+            <li><strong>(J) Cancellation derivative:</strong> d&rho;/d&alpha; = &minus;(2/&alpha;)P<sub>E</sub>P<sub>O</sub>(&mu;<sub>E</sub>&minus;&mu;<sub>O</sub>) &mdash; exact formula</li>
+            <li><strong>(K) Variance reduction:</strong> &mu; reduces variance by 70&ndash;97% vs random &mdash; multiplicativity creates systematic anti-correlations</li>
         </ul>
 
-        <h2>Numerical Discoveries (121 scripts)</h2>
+        <h2>Numerical Discoveries (136 scripts)</h2>
         <ul>
             <li><strong>Zero detection:</strong> &sigma;<sub>min</sub>(S<sub>N</sub>(1/4+it)) collapses at t &approx; &gamma;<sub>k</sub>/2</li>
-            <li><strong>Growth detection:</strong> a zero off the critical line produces anomalous trace growth &Theta;(N<sup>1&minus;Re(&rho;)</sup>)</li>
-            <li><strong>Nyman&ndash;Beurling:</strong> primes alone are insufficient (d stagnates at 0.228); composites carry irreducible information</li>
-            <li><strong>Eigenvalue cancellation:</strong> 99.7% of eigenvalues cancel at &sigma; = 1/4 &mdash; consistent with RH</li>
-            <li><strong>GUE universality:</strong> eigenvalue spacing statistics match random matrix theory predictions</li>
+            <li><strong>Eigenvalue cancellation:</strong> 99.7% at N = 5,000 &mdash; consistent with RH</li>
             <li><strong>&alpha;-deformation:</strong> F<sub>&alpha;</sub>(s) has no zeros for &alpha; &lt; 1; zeros emerge at &alpha; = 1 (phase transition)</li>
-            <li><strong>Dimensional extension:</strong> rank invariance verified for dimensions d = 2 to 10</li>
-            <li><strong>Farey deviation:</strong> &delta;<sub>N</sub> &sim; N<sup>0.477</sup>, consistent with RH</li>
+            <li><strong>&mu; beats random 2&ndash;5&times;:</strong> the multiplicative structure of &mu; produces 2&ndash;5 times smaller inner product than random &pm;1 vectors</li>
+            <li><strong>GF(2) / Sikidy connection:</strong> &mu;(k) = (&minus;1)<sup>&omega;(k)</sup> is a group morphism (N*,&times;) &rarr; (GF(2),+), same structure as Sikidy XOR</li>
+            <li><strong>Fractional parts {N/k}:</strong> the cancellation comes from the discontinuities of {N/k}, not from smooth approximations &mdash; smoothing destroys the cancellation</li>
+            <li><strong>&radic;N threshold:</strong> the dyadic decomposition separates smooth (D &lt; &radic;N) and oscillating (D &gt; &radic;N) regimes &mdash; same &radic;N as the HR gap</li>
+            <li><strong>Nyman&ndash;Beurling:</strong> primes alone are insufficient (d stagnates at 0.228)</li>
+            <li><strong>Hyperbolic summation:</strong> 99.6% of E(N) comes from the first &radic;N Dirichlet hyperbolic bands</li>
         </ul>
 
         <h2>Background</h2>
