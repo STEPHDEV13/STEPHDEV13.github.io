@@ -140,11 +140,13 @@
             I pursue two main lines of inquiry:
         </p>
         <p>
-            <strong>(1) Riemann Hypothesis.</strong> Structural approaches using
-            divisor lattice matrices over GF(2), founded on the principle that
+            <strong>(1) Riemann Hypothesis &amp; BSD Conjecture.</strong> Structural approaches using
+            GCD matrices for L-functions, founded on the principle that
             <em>&ldquo;the set of sets is not the same&rdquo;</em> &mdash; a collection
-            of individually symmetric objects does not inherit their symmetry,
-            and this failure carries deep arithmetic information.
+            of individually symmetric objects does not inherit their symmetry.
+            This framework extends from &zeta;(s) to elliptic curve L-functions L(E,s),
+            providing a spectral criterion for the analytic rank and encoding
+            all BSD invariants in the trace constant.
         </p>
         <p>
             <strong>(2) Sikidy &amp; Ethnomathematics.</strong> Algebraic and
@@ -159,30 +161,57 @@
         <div class="paper">
             <div class="paper-title">
                 The Set of Sets Is Not the Same: Divisor Lattice Coherence
-                and Spectral Detection of Riemann Zeta Zeros
+                and a Structural Reduction of M&ouml;bius Cancellation
             </div>
             <div class="paper-meta">
-                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash; Version 10 (21 pages, 12 proven theorems)<br>
+                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash; Version 11 (24 pages, 15 proven theorems)<br>
                 MSC 2020: 11M26, 11A25, 15B36, 11N37, 11C20, 15A42, 11M06
             </div>
             <div class="paper-abstract">
                 We construct a symmetry defect matrix S<sub>N</sub>(s) from divisor lattices
-                and prove 12 unconditional theorems: the trace converges to
+                and prove 15 unconditional theorems: the trace converges to
                 &zeta;(2s)/&zeta;(&minus;s); an exact Hadamard identity links S<sub>N</sub>(&sigma;)
                 to S<sub>N</sub>(1&minus;&sigma;) across the critical strip;
                 T<sub>N</sub> factors as a Hadamard product of rank-2 local matrices
-                (matrix Euler product); the rank Q(N) is a topological invariant across
-                all dimensions d &ge; 2; the Euler product cancellation ratio is strictly
-                decreasing in the deformation parameter &alpha;; the finite cancellation
-                derivative d&rho;/d&alpha; = &minus;(2/&alpha;)P<sub>E</sub>P<sub>O</sub>(&mu;<sub>E</sub>&minus;&mu;<sub>O</sub>)
-                reduces monotonicity to a parity condition; and &mu; reduces the variance
-                of the eigenvalue sum by 70&ndash;97% compared to random signs via the
-                GF(2) morphism structure &mdash; connecting to Malagasy Sikidy.
-                Supported by 136 numerical scripts.
+                (matrix Euler product); the local cross-term CROSS<sub>p</sub> &lt; 0
+                for every prime p (Cauchy&ndash;Schwarz); the W&ndash;CROSS identity
+                1 + 2&middot;CROSS/||w||&sup2; = aW/(1&minus;W) holds exactly;
+                and the hyperbolic bands j &gt; &radic;N contribute at most
+                O(N<sup>7/8</sup>) to the error, reducing RH to &radic;N bands.
+                Supported by 160+ numerical scripts.
             </div>
             <div class="links">
-                <a href="divisor_lattice_coherence_riemann_2026_v10.pdf" target="_blank">View PDF (v10)</a>
-                <a class="soon">GitHub &mdash; coming soon</a>
+                <a href="divisor_lattice_coherence_riemann_2026_v11.pdf" target="_blank">View PDF (v11)</a>
+                <a href="https://github.com/STEPHDEV13/Riemann" class="gh" target="_blank">GitHub</a>
+            </div>
+        </div>
+
+        <div class="paper" style="border-left: 4px solid #e74c3c;">
+            <div class="paper-title">
+                GCD Matrices for Elliptic Curve L-Functions: Trace Formulas,
+                Eigenvalue Cancellation, and Spectral Signatures of Arithmetic Rank
+            </div>
+            <div class="paper-meta">
+                Rabarison Mimi St&eacute;phane Thannio &mdash; April 2026 &mdash; 16 pages, 13 proven theorems<br>
+                MSC 2020: 11G05, 11G40, 11M41, 15B36
+            </div>
+            <div class="paper-abstract">
+                We extend the GCD-matrix framework to L-functions of elliptic curves.
+                For E/&Qopf; with coefficients a<sub>p</sub>, we construct T<sub>N</sub><sup>E</sup>
+                and prove: (A)&ndash;(E) universal structure (rank Q(N), Euler product, eigenvalues);
+                (F) CROSS &rarr; &minus;1/2 when L(E,1) &ne; 0;
+                (G) trace diverges as (log N)<sup>r</sup> when ord<sub>s=1</sub>L(E,s) = r;
+                (H)&ndash;(I) CROSS &gt; 0 for infinitely many N (positive density);
+                (J)&ndash;(K) multiplicative amplification of eigenvalue bias (AM&ndash;GM);
+                (L) eventual positivity via Fourier + large sieve.
+                <strong>Complete spectral criterion:</strong> L(E,1) &ne; 0 &hArr; CROSS(N) &lt; 0
+                for all N large. BSD for rank 0&ndash;1 clarified via root number +
+                Gross&ndash;Zagier + Kolyvagin. The trace constant C<sub>r</sub> encodes all
+                BSD invariants (&Omega;, Reg, &Sha;, torsion, Tamagawa numbers).
+            </div>
+            <div class="links">
+                <a href="gcd_matrices_elliptic_curves_2026.pdf" target="_blank">View PDF</a>
+                <a href="https://github.com/STEPHDEV13/Riemann/tree/main/BSD" class="gh" target="_blank">GitHub (BSD)</a>
             </div>
         </div>
 
@@ -230,22 +259,36 @@
             <li><strong>Judge distribution:</strong> only 8 of the 16 figures can appear as Judge (even Hamming weight) &mdash; intrinsic error detection</li>
         </ul>
 
-        <h2>Riemann: Proven Results (Version 10 &mdash; 12 Theorems)</h2>
+        <h2>Riemann: Proven Results (Version 11 &mdash; 15 Theorems)</h2>
         <ul>
             <li><strong>(A) Trace formula:</strong> trace(S<sub>N</sub>(s)) &rarr; &zeta;(2s)/&zeta;(&minus;s) with pole at s = 1/2</li>
             <li><strong>(B) Rank independence:</strong> rank(S<sub>N</sub>) = Q(N) &sim; 6N/&pi;&sup2; for all s</li>
-            <li><strong>(C) Frobenius norm:</strong> ||S<sub>N</sub>(&sigma;)||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>) unconditionally</li>
+            <li><strong>(C) Frobenius norm:</strong> ||S<sub>N</sub>(&sigma;)||<sup>2</sup><sub>F</sub> = &Theta;(N<sup>2&minus;4&sigma;</sup>)</li>
             <li><strong>(D) Rank&ndash;Frobenius bound:</strong> |trace| = O(&radic;N) for real &sigma; &gt; 1/2</li>
             <li><strong>(E) Ramanujan decomposition:</strong> (f<sub>s</sub> * &mu;)(d) = &mu;(d) d<sup>3s</sup></li>
-            <li><strong>(F) Hadamard identity:</strong> S<sub>N</sub>(1&minus;&sigma;) = D<sup>&minus;1</sup>(S<sub>N</sub>(&sigma;) &compfn; R<sub>N</sub>)D<sup>&minus;1</sup> exact, R<sub>N</sub> PSD</li>
-            <li><strong>(G) Matrix Euler product:</strong> T<sub>N</sub> = &bigodot;<sub>p</sub> T<sup>(p)</sup><sub>N</sub>, rank-2 local factors with opposite signs</li>
-            <li><strong>(H) Dimensional invariance:</strong> rank(T<sup>(d)</sup><sub>N</sub>) = Q(N) for all d &ge; 2</li>
-            <li><strong>(I) Euler product monotonicity:</strong> R<sub>P</sub>(&alpha;) strictly decreasing</li>
-            <li><strong>(J) Cancellation derivative:</strong> d&rho;/d&alpha; = &minus;(2/&alpha;)P<sub>E</sub>P<sub>O</sub>(&mu;<sub>E</sub>&minus;&mu;<sub>O</sub>) &mdash; exact formula</li>
-            <li><strong>(K) Variance reduction:</strong> &mu; reduces variance by 70&ndash;97% vs random &mdash; multiplicativity creates systematic anti-correlations</li>
+            <li><strong>(F) Band concentration:</strong> hyperbolic bands j &gt; &radic;N contribute O(N<sup>7/8</sup>), reducing RH to &radic;N bands</li>
+            <li><strong>(G) Hadamard identity:</strong> S<sub>N</sub>(1&minus;&sigma;) = D<sup>&minus;1</sup>(S<sub>N</sub>(&sigma;) &compfn; R<sub>N</sub>)D<sup>&minus;1</sup> exact, R<sub>N</sub> PSD</li>
+            <li><strong>(H) Matrix Euler product:</strong> T<sub>N</sub> = &bigodot;<sub>p</sub> T<sup>(p)</sup><sub>N</sub>, rank-2 local factors</li>
+            <li><strong>(I) Dimensional invariance:</strong> rank(T<sup>(d)</sup><sub>N</sub>) = Q(N) for all d &ge; 2</li>
+            <li><strong>(J) Euler product monotonicity:</strong> R<sub>P</sub>(&alpha;) strictly decreasing</li>
+            <li><strong>(K) Cancellation derivative:</strong> d&rho;/d&alpha; exact formula</li>
+            <li><strong>(L) Variance decomposition</strong> + <strong>local negativity:</strong> CROSS<sub>p</sub> &lt; 0 for every prime p (Cauchy&ndash;Schwarz)</li>
+            <li><strong>(M) W&ndash;CROSS identity:</strong> 1 + 2&middot;CROSS/||w||&sup2; = aW/(1&minus;W) exactly</li>
         </ul>
 
-        <h2>Numerical Discoveries (136 scripts)</h2>
+        <h2>BSD: Proven Results (13 Theorems)</h2>
+        <ul>
+            <li><strong>(A&ndash;E) Universal structure:</strong> factorization, rank Q(N), matrix Euler product, trace &rarr; &zeta;(2s)/L(E,s), eigenvalues</li>
+            <li><strong>(F) CROSS &rarr; &minus;1/2</strong> when L(E,1) &ne; 0 (unconditional)</li>
+            <li><strong>(G) Trace divergence:</strong> partial sums grow as (log N)<sup>r</sup> when ord<sub>s=1</sub>L(E,s) = r (Tauberian)</li>
+            <li><strong>(H&ndash;I) CROSS &gt; 0</strong> for infinitely many N (Ces&agrave;ro) + positive density (Paley&ndash;Zygmund)</li>
+            <li><strong>(J&ndash;K) Multiplicative amplification:</strong> R<sub>2</sub> = (R<sub>1</sub>&sup2;+1)/(2R<sub>1</sub>) &gt; 1 by AM&ndash;GM; eigenvalue bias from explicit formula</li>
+            <li><strong>(L) Eventual positivity:</strong> CROSS(N) &gt; 0 for all N large (Fourier + large sieve)</li>
+            <li><strong>Complete criterion:</strong> L(E,1) &ne; 0 &hArr; CROSS(N) &lt; 0 for all N large</li>
+            <li><strong>BSD rank 0&ndash;1:</strong> clarified via root number + Gross&ndash;Zagier + Kolyvagin</li>
+        </ul>
+
+        <h2>Numerical Discoveries (160+ scripts)</h2>
         <ul>
             <li><strong>Zero detection:</strong> &sigma;<sub>min</sub>(S<sub>N</sub>(1/4+it)) collapses at t &approx; &gamma;<sub>k</sub>/2</li>
             <li><strong>Eigenvalue cancellation:</strong> 99.7% at N = 5,000 &mdash; consistent with RH</li>
